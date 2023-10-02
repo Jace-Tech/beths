@@ -4,6 +4,7 @@ from flask import Blueprint, render_template, redirect, session, get_flashed_mes
 user = Blueprint("user", __name__)
 
 @user.get("/home/")
+@user.get("/")
 def home_page():
     return render_template("users/index.html")
 
